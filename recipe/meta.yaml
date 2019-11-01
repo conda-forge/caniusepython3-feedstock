@@ -1,5 +1,5 @@
 {% set name = "caniusepython3" %}
-{% set version = "7.1.0" %}
+{% set version = "7.2.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 65f9d18b3a1b23c3b6e387aaaca891dd1ede8bd9f9460dac2cfacccc7579df2a
+  sha256: 48508255db815b03a0def81beb7e9615b4fb39e07eac7e1a9268584a0829e528
 
 build:
   number: 0
