@@ -10,7 +10,7 @@ source:
   sha256: 48508255db815b03a0def81beb7e9615b4fb39e07eac7e1a9268584a0829e528
 
 build:
-  number: 1
+  number: 2
   entry_points:
     - caniusepython3 = caniusepython3.__main__:main
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
