@@ -1,19 +1,19 @@
 {% set name = "caniusepython3" %}
-{% set version = "7.2.0" %}
+{% set version = "7.3.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 48508255db815b03a0def81beb7e9615b4fb39e07eac7e1a9268584a0829e528
+  sha256: 58cb3b3643530bc955d3dc5fe49385ccd1f0d2677bf1d9b159814c0f5e677562
 
 build:
-  number: 2
+  number: 0
   entry_points:
     - caniusepython3 = caniusepython3.__main__:main
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
